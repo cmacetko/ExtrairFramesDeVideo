@@ -82,7 +82,7 @@ app.post("/executar", async function(req, res){
                 if( fs.existsSync(path.join(InfTmpDir, InfImagem)) )
                 {
     
-                    InfImagens.push(InfImagem);
+                    InfImagens.push("/tmp/" + InfImagem);
     
                 }
     
